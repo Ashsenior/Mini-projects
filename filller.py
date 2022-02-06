@@ -86,3 +86,11 @@ def remove_least_correlated_columns(df,label,factor=3):
         print(" No column was removed from DataFrame")
     df = df.drop(least_corr,axis=1)
     return df
+
+def get_date_column(csv_file_name):
+    df = pd.read_csv(csv_file_name+".csv",low_memory=False)
+    for label,content in df.items():
+        if pd.api.types.is_string_dtype(content):
+            if "date" in label.lower():
+                datec = column
+    return datec
