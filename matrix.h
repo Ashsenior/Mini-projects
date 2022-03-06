@@ -1,6 +1,6 @@
 /* This header file containes functions related to matrix like 
 
-    empty matric == empty_mat(int,int)
+    empty matrice == empty_mat(int,int)
     input mat == input_mat(int.int)
     display mat == display(float **,int,int)
     dot mat == dot(float **,float **,int,int)
